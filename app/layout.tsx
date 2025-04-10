@@ -7,15 +7,15 @@ import { unstable_ViewTransition as ViewTransition } from 'react';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://leerob.com'),
+  metadataBase: new URL('https://michaelmccrae.com'),
   alternates: {
     canonical: '/'
   },
   title: {
-    default: 'Lee Robinson',
-    template: '%s | Lee Robinson'
+    default: 'Michael McCrae',
+    template: '%s | Michael McCrae'
   },
-  description: 'Frontend developer, optimist, community builder.'
+  description: 'Publisher, Editor, Technologist.'
 };
 
 export default function RootLayout({
@@ -40,10 +40,9 @@ export default function RootLayout({
 
 function Footer() {
   const links = [
-    { name: '@leerob', url: 'https://x.com/leerob' },
-    { name: 'youtube', url: 'https://www.youtube.com/@leerob' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/leeerob' },
-    { name: 'github', url: 'https://github.com/leerob' }
+    { name: '@leerob', url: 'https://x.com/michaelmccrae' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/in/michaelallanmccrae/' },
+    { name: 'github', url: 'https://github.com/michaelmccrae' }
   ];
 
   return (
