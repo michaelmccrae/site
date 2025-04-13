@@ -16,6 +16,7 @@
 /build
 
 # misc
+**/app/archive/
 .DS_Store
 *.pem
 .vscode
