@@ -1,6 +1,8 @@
 # Portfolio Site
 
-This site is forked from [Lee Robinson](https://github.com/leerob/site)
+This is Michael McCrae's portfolio site. It is forked from [Lee Robinson](https://github.com/leerob/site)
+
+Stack is the following: 
 
 - **Framework**: [Next.js](https://nextjs.org/)
 - **Deployment**: [Vercel](https://vercel.com)
