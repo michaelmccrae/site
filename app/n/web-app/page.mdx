@@ -1,0 +1,67 @@
+import { AnimatedName } from '../animated-name.tsx';
+import Image from 'next/image';
+import Practise from './practise.png';
+import Home from './home.png';import Scenario from './scenario.png'
+
+
+export const metadata = {
+  title: 'Web-app',
+  alternates: {
+    canonical: '/n/web-app'
+  }
+};
+
+# Web applications and coding
+
+<AnimatedName />
+
+I develop web apps using JavaScript and React. Currently, I am working mostly in NextJS. With the quick advancement of AI chatbots, quick prototyping is possible.  
+
+I am interested in voice interaction. Artificial intelligence tools are better at understanding voice and processing responses quickly. Also, new voice models are startlingly realistic. 
+
+## Selected Projects
+
+Full description of projects can be found at [my Github](https://github.com/michaelmccrae/deparley). 
+
+### [Portfolio site](https://github.com/michaelmccrae/portfolio-website) 
+
+The website you are reading was built using JavaScript, React and TypeScript. Framework is NextJS. Articles are in MDX with some Tailwind styling. Deployment is on Vercel.
+
+The site was forked from [Lee Robinson's site on GitHub](https://github.com/leerob/site). 
+
+### [Deparley](https://github.com/michaelmccrae/deparley)
+
+Deparley is online instruction for negotiation using practial scenarios. Emphasis is on learning by doing. Deparley is frictionless service to perform various sales calls and negotiation scenarios. Artificial intelligence is seeing growth in services that use human voice for interaction. Deparley is harnessing the best of those services.
+
+App is built in NextJS. Service is forked from [Vercel's Swift – AI Voice Assistant](https://vercel.com/templates/next.js/swift-ai-voice-assistant). 
+
+Service relies on a number of AI APIs: 
+
+-   [Swift](https://swift-ai.vercel.app) for fast AI voice assistance.
+-   [Groq](https://groq.com) is used for fast inference of [OpenAI Whisper](https://github.com/openai/whisper) (for transcription) and [Meta Llama 3](https://llama.meta.com/llama3/) (for generating the text response).
+-   [Cartesia](https://cartesia.ai)'s [Sonic](https://cartesia.ai/sonic) voice model is used for fast speech synthesis, which is streamed to the frontend.
+-   [VAD](https://www.vad.ricky0123.com/) is used to detect when the user is talking, and run callbacks on speech segments.
+-   [Deepgram](https://www.deepgram.com) is used for modeling pauses and filler words in transcription. 
+
+
+{/* ![Select a scenario](/lib/readmephotos/home.png) */}
+
+<div className="border border-gray-200 rounded-md p-4 bg-white">
+  <Image src={Home} alt="Select a scenario" />
+</div>
+
+Read scenario and press start when ready to practise
+
+<div className="border border-gray-200 rounded-md p-4 bg-white">
+  <Image src={Scenario} alt="Select a scenario" />
+</div>
+
+{/* ![Read scenario and press start when ready to practise](/lib/readmephotos/scenario.png) */}
+
+After practise, you are measured on asking qualifying questions, use of filler words and pauses
+
+{/* ![After practise, you are measured on asking qualifying questions, use of filler words and pauses](/lib/readmephotos/practise.png) */}
+
+<div className="border border-gray-200 rounded-md p-4 bg-white">
+  <Image src={Practise} alt="Practise web app" />
+</div>
